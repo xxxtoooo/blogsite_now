@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1 id="blogTitle">My Blog</h1>
+  <p id="blogDescription">わたしのブログ</p>
+</header>
+
+<nav>
+  <button onclick="showHome()">HOME</button>
+  <button onclick="showCreate()">記事を書く</button>
+</nav>
+
+<main>
+
+  <!-- トップページ -->
+  <section id="home">
+    <h2>Blog</h2>
+
+    <div id="tagArea"></div>
+
+    <div id="articleList"></div>
+  </section>
+
+
+  <!-- 記事を書く -->
+  <section id="create" class="hidden">
+
+    <h2>記事を書く</h2>
+
+    <label>タイトル</label>
+    <input type="text" id="title" placeholder="今日のタイトル">
+
+    <label>日付</label>
+    <input type="date" id="date">
+
+    <label>時刻</label>
+    <input type="time" id="time">
+
+    <label>本文</label>
+    <textarea id="content" placeholder="ここにブログを書いてね！"></textarea>
+
+    <label>写真</label>
+    <input type="file" id="photos" accept="image/*" multiple>
+
+    <div id="preview"></div>
+
+    <label>タグ</label>
+    <input type="text" id="tags" placeholder="#日常 #学校 #お仕事">
+
+    <button class="postButton" onclick="postArticle()">
+      投稿する
+    </button>
+
+  </section>
+
+
+  <!-- タグページ -->
+  <section id="tagPage" class="hidden">
+
+    <button onclick="showHome()">← HOME</button>
+
+    <h2 id="tagTitle"></h2>
+
+    <div id="tagArticles"></div>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
