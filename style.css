@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+  font-family: Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+header {
+  background: white;
+  text-align: center;
+  padding: 35px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: #888;
+}
+
+nav {
+  background: white;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav button {
+  background: none;
+  border: none;
+  margin: 0 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+main {
+  width: min(700px, 92%);
+  margin: 30px auto;
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.article {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.articleDate {
+  font-size: 13px;
+  color: #999;
+}
+
+.articleTitle {
+  font-size: 21px;
+  margin: 8px 0 15px;
+}
+
+.articleContent {
+  white-space: pre-wrap;
+  line-height: 1.8;
+}
+
+.article img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+.tags {
+  margin-top: 15px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  color: #777;
+  cursor: pointer;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: white;
+}
+
+textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+
+.postButton {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#tagArea {
+  margin-bottom: 20px;
+}
+
+.tagButton {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 7px 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.deleteButton {
+  margin-top: 15px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+}
